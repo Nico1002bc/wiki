@@ -1,3 +1,7 @@
 {% extends "encyclopedia/layout.html" %}
 
 {% block title %} {{title}} {% endblock %}
+
+{% block body %}
+    <div>{{content|safe}}</div> <!--El safe es para que django confie y ponga el contenido correctamente, si no lo pone con html a machete-->
+{% endblock %}
